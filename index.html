@@ -27,6 +27,10 @@
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
+            .bg-pan-left {
+	-webkit-animation: bg-pan-left 8s both;
+	        animation: bg-pan-left 8s both;
+}
             
         }
         /* Termina estilo de NavBar*/
@@ -49,6 +53,10 @@
             box-sizing: border-box;
             border: none;
         }
+        .card.imagen:hover {
+            filter: blur(5px);
+        }
+
         p{
             text-align: center;
             font-style: initial;
@@ -64,17 +72,19 @@
         #btn1 { 
             background-color:#85331E;
             color: white;
-            border: none;
+            border-radius: 55px;
             width: 100%;
             font-weight: bold;
             padding: 25px; 
             font-size: 20px; 
+            
         }
+       
         
         #btn2 { 
             background-color:#C8733A;
             color: white;
-            border: none;
+            border-radius: 55px;
             width: 100%;
             font-weight: bold;
             padding: 20px; 
@@ -83,7 +93,7 @@
         #btn3 { 
             background-color:#D24C4A;
             color: white;
-            border: none;
+            border-radius: 55px;
             width: 100%;
             font-weight: bold;
             padding: 23px; 
@@ -92,7 +102,7 @@
         #btn4 { 
             background-color:#84A69D;
             color: white;
-            border: none;
+            border-radius: 55px;
             width: 100%;
             font-weight: bold;
             padding: 23px; 
@@ -101,7 +111,7 @@
         #btn5 { 
             background-color:#498B74;
             color: white;
-            border: none;
+            border-radius: 55px;
             width: 100%;
             font-weight: bold;
             padding: 23px; 
@@ -110,7 +120,7 @@
         #btn6 { 
             background-color:#567B57;
             color: white;
-            border: black;
+            border-radius: 55px;
             width: 100%;
             font-weight: bold;
             padding: 23px; 
@@ -334,11 +344,24 @@
   </nav>
 <body>
   <!--Aquí termina NavBar-->
+  <div class='content'>
+    <div class='visible'>
+      <p>
+        ¡Bienveni
+      </p>
+      <ul>
+        <li>a !</li>
+        <li>o !</li>
+        <li>x !</li>
+      </ul>
+    </div>
+  </div>
 
   <p class="text-center" class="font-family Montserrat" class="font-size bold">ZURISADAI SANTOS</p>
   <p class="text-center" class="font-family Montserrat" class="font-size bold" id="dev">Java Full Stack Developer Jr</p>
 
 <!--Inicia Inicio-->
+
 <section class="Inicio" id="Inicio">
 <div class="container">
     <div class="card" id="cardleft">
@@ -351,7 +374,7 @@
         <button onclick="location.href='#Contacto'"class="btn btn-primary" id="btn6" type="button">Contacto</button><br>
     </div>
     <div class="card" id="cardright">
-     <img src="./src/399874664_1107517740698158_7873615101555103827_n.jpg">
+     <img src="./src/399874664_1107517740698158_7873615101555103827_n.jpg" id="imagen">
     </div>
 </div>
 </section>
